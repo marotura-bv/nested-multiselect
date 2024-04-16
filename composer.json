@@ -1,0 +1,40 @@
+{
+    "name": "marotura/nested-multiselect",
+    "description": "A nested multiselect field for Laravel Nova",
+    "keywords": [
+        "laravel",
+        "nova",
+        "nested-multiselect",
+        "multiselect",
+        "select",
+        "marotura"
+    ],
+    "authors": [
+        {
+            "name": "Arjan Bruining",
+            "email": "a.bruining@marotura.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Marotura\\NestedMultiselect\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Marotura\\NestedMultiselect\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
