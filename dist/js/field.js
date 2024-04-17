@@ -56,7 +56,7 @@ __webpack_require__.r(__webpack_exports__);
       console.log(this.field);
       this.value = this.field.value || '';
       this.options = JSON.parse(this.field.options[0].label);
-      this.selectedValues = JSON.parse(this.value);
+      this.selectedValues = this.value;
     },
     /**
      * Fill the given FormData object with the field's internal value.
