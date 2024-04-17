@@ -45,7 +45,8 @@ export default {
       console.log(this.field);
       this.value = this.field.value || ''
       this.options = JSON.parse(this.field.options[0].label);
-      this.selectedValues = this.value;
+      console.log(this.value);
+      this.selectedValues = this.value == '' ? JSON.parse(this.value) : this.value;
     },
 
     /**
