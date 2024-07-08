@@ -36,4 +36,11 @@ class NestedMultiselect extends MultiSelect
             return is_array($label) ? $label + ['id' => $value] : ['label' => $label, 'id' => $value];
         })->values()->all();
     }
+
+    public function flatMode($value = false)
+    {
+        return $this->withMeta([
+            'flat' => $value
+        ]);
+    }
 }
